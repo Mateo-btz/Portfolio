@@ -21,20 +21,15 @@ function AboutMe(url) {
             <br></br>
             <br></br>
             <SimpleBar style={{height: '200px'}}>
-            <div style={{width: "90%", marginLeft: 'auto', marginRight: 'auto'}}>
-                <p>Développeur <span style={{color: '#40c3ff'}}>front-end</span> junior de 22 ans, Je recherche une alternance jusqu'à Décembre 2021</p>
-                <p style={{width: "90%", display: 'block', marginLeft: 'auto', marginRight: 'auto'}}>Je fais principalement des <span style={{color: '#40c3ff'}}>sites Web et Applis</span> (e-commerce, sites vitrines, jeux en Javascript)</p>
-                <p>Après un <span style={{color: '#40c3ff'}}>BAC Littéraire</span> en 2016, je m'inscris en <span style={{color: '#40c3ff'}}>Licence LLCER Anglais</span>. N'étant pas vraiment fait pour les études supérieures, je décide de quitter la fac après 1 an et je m'essaie
-                à <span style={{color: '#40c3ff'}}>l'interim</span> : j'y reste pendant 3 ans.</p>
-                <p>J'ai pu travailler dans de nombreuses entreprises (plasturgie, scierie, salaison, livraison et j'en passe). C'était des jobs souvent physiques, mais c'était une période bénéfique pendant laquelle j'ai vraiment baigné dans le monde du travail.</p> 
-                <p>C'est au début de l'année 2020 que j'ai été sélectionné dans une formation qui a tout changé : <span style={{color: '#40c3ff'}}>Simplon</span>.</p>
-                <p>J'ai appris mes premiers <span style={{color: '#40c3ff'}}>langages informatiques</span>, mes <span style={{color: '#40c3ff'}}>premiers frameworks</span>, et j'ai tout de suite adoré.
-                J'ai pu expérimenter les joies du code, mais aussi les moments de frustration.</p>
-                <p>Ma première expérience en entreprise : un stage de 2 mois chez <span style={{color: '#40c3ff'}}>Unipile</span> (anciennement Focus). J'ai pu participer au développement du site Vitrine. <a href="https://www.unipile.com/">(cliquez ici pour voir)</a></p>
-                <p>Aujourd'hui, je recherche une entreprise qui serait prêt à miser sur un profil comme le mien.<span style={{color: '#40c3ff'}}> Pourquoi pas vous ?</span></p>
+            <div className="aboutme">
+                <p>Développeur <span className="bold-text">front-end</span> junior de 24 ans, Je suis en quête d'un nouveau challenge.</p>
+                <p>Après un titre professionnel avec <span className="bold-text">Simplon Roanne</span> et une Licence Professionnelle à l'<span className="bold-text">IUT Le-Puy-en-Velay</span> en alternance, je suis prêt à passer à l'étape supérieure.</p>
+                <p>Pendant mon parcours, j'ai pu participer à la création du site vitrine d'<span className="bold-text">Unipile</span>.<a href="https://www.unipile.com/" target="_blank" rel="noreferrer"> (cliquez ici pour voir)</a></p>
+                <p>J'ai également eu la chance de pratiquer mon alternance avec l'agence web <span className="bold-text"><a href="https://www.uplight.fr/" target="_blank" rel="noreferrer">Uplight</a></span>. C'est là que j'ai pu travailler pour de nombreux clients et acquérir le plus de compétences</p>
+                <p>Aujourd'hui, je recherche une entreprise qui serait prêt à miser sur un profil comme le mien.<span className="bold-text"> Pourquoi pas vous ?</span></p>
             </div>
             </SimpleBar> 
-            <a href="./CV.pdf" style={{color: "inherit", textDecoration: "inherit"}}>Télécharger mon CV</a>  
+            <a href="./CV.pdf" target="_blank" rel="noreferrer" class="cv-link">Télécharger mon CV</a>  
         </div>
     </>
     )

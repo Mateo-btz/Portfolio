@@ -1,11 +1,12 @@
 import React, {useState} from 'react';
 import Home from './Home';
-import { CSSTransition } from 'react-transition-group';
 import ProgressBar from 'react-bootstrap/ProgressBar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBootstrap, faGithubSquare, faWordpress } from "@fortawesome/free-brands-svg-icons";
+import { faBootstrap,faGithubSquare,faWordpress,faHtml5,faCss3,faPhp,faJs,faReact,faSymfony,faGitAlt,faNpm,faGulp } from "@fortawesome/free-brands-svg-icons";
 import history from "./history";
+import {Container, Row, Col} from 'react-bootstrap';
+
 
 
 function About(url) {
@@ -13,37 +14,78 @@ function About(url) {
     history.push(url);
     const [inProp, setInProp] = useState(false);
     return(
-        <CSSTransition in={inProp} timeout={300} classNames="animation">
         <>
         <Home />
         <div className="content">
-            <h2>MES COMPETENCES</h2>
-            <ul>
-                <li>HTML5</li><div><ProgressBar animated={true} variant="success" now={90}/></div>
-                <li>CSS3</li><div><ProgressBar animated={true} variant="success" now={85} /></div>
-                <li>Javascript</li><div><ProgressBar animated={true} variant="success" now={75} /></div>
-                <li>ReactJS</li><div><ProgressBar animated={true} variant="success" now={75} /></div>
-                <li>PHP</li><div><ProgressBar animated={true} variant="warning" now={50} /></div>
-                <li>mySQL</li><div><ProgressBar animated={true} variant="warning" now={50} /></div>
-            </ul>
-            <div className="brand-container">
-                <div>
-                    <FontAwesomeIcon icon={faBootstrap} size="5x" color="orange"/>
-                    <p>Bootstrap</p>
-                </div>
-                <div>
-                    <FontAwesomeIcon icon={faWordpress} size="5x" color="orange"/>
-                    <p>Wordpress</p>     
-                </div>
-                <div>
-                    <FontAwesomeIcon icon={faGithubSquare} size="5x" color="orange"/> 
-                    <p>Github</p>
-                </div>
-            </div>
+            <h2 className="skill-title">MES COMPETENCES</h2>
+            <Container id="skills-container">
+                <Row>
+                    <Col>
+                        <div className="skill-container">
+                            <FontAwesomeIcon icon={faHtml5} size="5x" color="orange"/>
+                            <p className="skill-text">HTML5</p>
+                        </div>
+                        <div className="skill-container">
+                            <FontAwesomeIcon icon={faWordpress} size="5x" color="orange"/>
+                            <p className="skill-text">Wordpress</p>     
+                        </div>
+                        <div className="skill-container">
+                            <FontAwesomeIcon icon={faBootstrap} size="5x" color="orange"/>
+                            <p className="skill-text">Bootstrap</p>
+                        </div>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
+                        <div className="skill-container">
+                            <FontAwesomeIcon icon={faCss3} size="5x" color="orange"/> 
+                            <p className="skill-text">CSS3</p>
+                        </div>
+                        <div className="skill-container">
+                            <FontAwesomeIcon icon={faReact} size="5x" color="orange"/>
+                            <p className="skill-text">ReactJS</p>
+                        </div>
+                        <div className="skill-container">
+                            <FontAwesomeIcon icon={faGitAlt} size="5x" color="orange"/>
+                            <p className="skill-text">Git</p>     
+                        </div>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
+                        <div className="skill-container">
+                            <FontAwesomeIcon icon={faPhp} size="5x" color="orange"/> 
+                            <p className="skill-text">Php</p>
+                        </div>
+                        <div className="skill-container">
+                            <FontAwesomeIcon icon={faSymfony} size="5x" color="orange"/>
+                            <p className="skill-text">Symfony</p>
+                        </div>
+                        <div className="skill-container">
+                            <FontAwesomeIcon icon={faNpm} size="5x" color="orange"/>
+                            <p className="skill-text">Npm</p>     
+                        </div>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
+                        <div className="skill-container">
+                            <FontAwesomeIcon icon={faJs} size="5x" color="orange"/> 
+                            <p className="skill-text">Javascript</p>
+                        </div>
+                        <div className="skill-container">
+                            <FontAwesomeIcon icon={faBootstrap} size="5x" color="orange"/>
+                            <p className="skill-text">Bootstrap</p>
+                        </div>
+                        <div className="skill-container">
+                            <FontAwesomeIcon icon={faGulp} size="5x" color="orange"/>
+                            <p className="skill-text">Gulp</p>     
+                        </div>
+                    </Col>
+                </Row>
+            </Container>
         </div>
         </>
-        </CSSTransition>
-        
     );}
     
 export default About;

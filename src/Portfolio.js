@@ -23,7 +23,7 @@ function Portfolio(url) {
           <Container>
             <Row>
               <Col>
-                <a href="http://tlou-lequiz.matibalt.com" style={{textDecoration: 'inherit'}}>
+                <a href="http://tlou-lequiz.matibalt.com" style={{textDecoration: 'inherit'}} target="_blank" rel="noreferrer">
                 <div className="project-container">
                   <img src={Quizz} alt="quizz" className="projectImg" style={{maxHeight: "200px"}}/>  
                   <p>Quizz en ReactJS</p>
@@ -31,7 +31,7 @@ function Portfolio(url) {
                 </a>
               </Col>
               <Col>
-                <a href="http://tictactoe.matibalt.com" style={{textDecoration: 'inherit'}}>
+                <a href="http://tictactoe.matibalt.com" style={{textDecoration: 'inherit'}} target="_blank" rel="noreferrer">
                 <div className="project-container">
                   <img src={TicTacToe} className="projectImg" style={{maxHeight: "200px"}} alt="tic-tac-toe"/>  
                   <p>Jeu du morpion en Javascript</p>
@@ -43,7 +43,7 @@ function Portfolio(url) {
         </SimpleBar>
         <br></br>
         <br></br>
-        <p>Codes disponible sur mon <span style={{color: "#40c3ff"}}><a href="https://github.com/Mateo-BTZ">Github</a></span></p>
+        <p>Codes disponible sur mon <span style={{color: "#40c3ff"}}><a href="https://github.com/Mateo-BTZ" target="_blank" rel="noreferrer">Github</a></span></p>
       </div>
     </>
 

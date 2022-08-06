@@ -3,14 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithubSquare, } from "@fortawesome/free-brands-svg-icons";
 import { faCode, faBars } from "@fortawesome/free-solid-svg-icons";
 import './css/menu-mobile.css';
-import { CSSTransition } from 'react-transition-group';
-import {
-    BrowserRouter as Router,
-    Route,
-    Link,
-    Switch,
-    Redirect,
-  } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 function Home() {
@@ -72,8 +65,8 @@ function Home() {
             </div>
           </ul>
           <div className="reseaux">     
-            <li><a href="https://github.com/Mateo-BTZ"><FontAwesomeIcon className="homeBtn" icon={faGithubSquare} size="3x" color="white"/></a></li> 
-            <li><a href="https://www.linkedin.com/in/mat%C3%A9o-balthazard-96a4021ab/"><FontAwesomeIcon className="homeBtn" icon={faLinkedin} size="3x" color="white"/></a></li> 
+            <li><a href="https://github.com/Mateo-BTZ" target="_blank" rel="noreferrer"><FontAwesomeIcon className="homeBtn" icon={faGithubSquare} size="3x" color="white"/></a></li> 
+            <li><a href="https://www.linkedin.com/in/mat%C3%A9o-balthazard-96a4021ab/" target="_blank" rel="noreferrer"><FontAwesomeIcon className="homeBtn" icon={faLinkedin} size="3x" color="white"/></a></li> 
           </div>
         </ul>
       </section>
