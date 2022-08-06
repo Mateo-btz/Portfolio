@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
 import Home from './Home';
 import { CSSTransition } from 'react-transition-group';
-import './fade.css';
+import './css/fade.css';
 import history from "./history";
-import './title.css';
+import './css/title.css';
 
 
 function Accueil(url) {
