@@ -1,0 +1,24 @@
+.menu {
+    background: black;
+    border-radius: 8px;
+    position: absolute;
+    top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 73%;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-50px);
+    transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+    border: 1px grey solid;
+
+  }
+  .menu.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  .menu li {
+      font-size: 2rem;
+  }

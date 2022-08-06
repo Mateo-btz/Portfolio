@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen','Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+.link, ul {
+    color: white;
+}
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex!important;
+    justify-content: space-between;
+    padding: 40px 100px;
+    transition: 0.6s;
+}
+header .logo {
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+header #toggle {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+header #toggle:before {
+    content: '';
+    position: absolute;
+    top: 7px;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+}
+header #toggle:after {
+    content: '';
+    position: absolute;
+    bottom: 7px;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    background: url(../images/bg.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+}
+#navigation ul {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+#navigation ul li {
+    list-style: none;
+}
+#navigation ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+#navigation ul li:visited {
+    color: #40c3ff;
+}
+.content {
+    max-width: 600px;
+    display: block;
+    z-index: 2;
+}
+.content h2 {
+    color: #fff;
+    font-size: 2.5em;
+}
+.content h2 span {
+    font-size: 1.2em;
+    color: #40c3ff;
+}
+.content p {
+    font-size: 1.2em;
+    color: #fff;
+    font-weight: 300;
+}
+.content > a {
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+    background: #fff;
+    color: #000;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+.sci {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    right: 100px;
+}
+.navigation {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 3em;
+    font-size: 2.5em;
+}
+.sci li {
+    list-style: none;
+}
+.sci li a {
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+    margin: 10px 0 0;
+}
+.sci li a img {
+    max-width: 20px;
+    filter: invert(1);
+    mix-blend-mode: difference;
+}
+@media (max-width: 767px) {
+    header {
+        padding: 20px 50px;
+    }
+    .banner {
+        padding: 100px 50px 150px;
+    }
+    .banner h2 {
+        font-size: 1.8em;
+    }
+    .banner .content p,
+    .banner .content a{
+        font-size: 1em;
+    }
+    .banner.active {
+        transform: translateX(-250px);
+    }
+    #navigation {
+        width: 250px;
+    }
+    #navigation ul li a {
+        font-size: 1.5em;
+        margin: 5px 0;
+    }
+    .sci {
+        display: none;
+    }
+    .sci li a {
+        margin: initial;
+        margin-right: 10px;
+    }
+    .link:hover:after {
+        width: 50%;
+        position: absolute;
+        left: 25%;
+    }
+    .carousel {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    } 
+}
+.content {
+    position: relative;
+    bottom: 600px;
+}
+@media(min-width: 767px) {
+    .content {
+        padding-left: 150px;
+    }
+    #hamburger {
+        display: none;
+    }
+}
+.animation-enter {
+    opacity: 0;
+}
+.animation-enter-active {
+    opacity: .5;
+    transition: opacity 300ms;
+}
+.animation-enter-done {
+    opacity: 1;
+}
+.animation-exit {
+    opacity: 1;
+}
+.animation-exit-active {
+    opacity: 5;
+    transition: opacity 300ms;
+}
+.animation-exit-done {
+    opacity: 0;
+}
+
+
+
+
+
