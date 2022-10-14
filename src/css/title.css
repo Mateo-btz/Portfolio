@@ -38,9 +38,6 @@
 .skill-text {
   font-size: 16px!important;
 }
-.skill-title {
-  margin-left: 50px;
-}
 .title__container:after {
     content: ']';
     position: absolute;

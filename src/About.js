@@ -33,6 +33,10 @@ function About(url) {
                             <FontAwesomeIcon icon={faBootstrap} size="5x" color="orange"/>
                             <p className="skill-text">Bootstrap</p>
                         </div>
+                        <div className="skill-container">
+                            <FontAwesomeIcon icon={faJs} size="5x" color="orange"/> 
+                            <p className="skill-text">Javascript</p>
+                        </div>
                     </Col>
                 </Row>
                 <Row>
@@ -49,6 +53,10 @@ function About(url) {
                             <FontAwesomeIcon icon={faGitAlt} size="5x" color="orange"/>
                             <p className="skill-text">Git</p>     
                         </div>
+                        <div className="skill-container">
+                            <FontAwesomeIcon icon={faGulp} size="5x" color="orange"/>
+                            <p className="skill-text">Gulp</p>     
+                        </div>
                     </Col>
                 </Row>
                 <Row>
@@ -64,22 +72,6 @@ function About(url) {
                         <div className="skill-container">
                             <FontAwesomeIcon icon={faNpm} size="5x" color="orange"/>
                             <p className="skill-text">Npm</p>     
-                        </div>
-                    </Col>
-                </Row>
-                <Row>
-                    <Col>
-                        <div className="skill-container">
-                            <FontAwesomeIcon icon={faJs} size="5x" color="orange"/> 
-                            <p className="skill-text">Javascript</p>
-                        </div>
-                        <div className="skill-container">
-                            <FontAwesomeIcon icon={faBootstrap} size="5x" color="orange"/>
-                            <p className="skill-text">Bootstrap</p>
-                        </div>
-                        <div className="skill-container">
-                            <FontAwesomeIcon icon={faGulp} size="5x" color="orange"/>
-                            <p className="skill-text">Gulp</p>     
                         </div>
                     </Col>
                 </Row>
