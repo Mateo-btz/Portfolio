@@ -3,6 +3,7 @@ import Home from './Home';
 import TicTacToe from './images/TicTacToeScreen.jpg';
 import Quizz from './images/QuizzScreen.png';
 import Rene from './images/rene.png';
+import Lolart from './images/lolart.png';
 import Ruche from './images/laruche.png';
 import history from "./history";
 import SimpleBar from 'simplebar-react';
@@ -33,7 +34,23 @@ function Portfolio(url) {
                 </a>
               </Col>
               <Col>
-                <a href="https://www.mytictactoe.fr/" style={{textDecoration: 'inherit'}} target="_blank" rel="noreferrer">
+                <a href="https://lolart.matibalt.fr/" style={{textDecoration: 'inherit'}} target="_blank" rel="noreferrer">
+                <div className="project-container">
+                  <img src={Lolart} alt="lolart" className="projectImg" style={{maxHeight: "200px"}}/>  
+                  <p>Lolart, portfolio artistique</p>
+                </div>
+                </a>
+              </Col>
+              <Col>
+                <a href="https://laruche-friperie.matibalt.fr/" style={{textDecoration: 'inherit'}} target="_blank" rel="noreferrer">
+                <div className="project-container">
+                  <img src={Ruche} className="projectImg" style={{maxHeight: "200px"}} alt="La-ruche-friperie"/>  
+                  <p>Site vitrine de la ruche Friperie</p>
+                </div>
+                </a>
+              </Col>
+              <Col>
+                <a href="https://jeu-du-morpion.matibalt.fr/" style={{textDecoration: 'inherit'}} target="_blank" rel="noreferrer">
                 <div className="project-container">
                   <img src={TicTacToe} className="projectImg" style={{maxHeight: "200px"}} alt="tic-tac-toe"/>  
                   <p>Jeu du morpion en Javascript</p>
@@ -45,14 +62,6 @@ function Portfolio(url) {
                 <div className="project-container">
                   <img src={Rene} className="projectImg" style={{maxHeight: "200px"}} alt="rene-malleville"/>  
                   <p>La boîte à René (bientôt sur le PlayStore)</p>
-                </div>
-                </a>
-              </Col>
-              <Col>
-                <a href="https://github.com/Mateo-btz/La_ruche_friperie" style={{textDecoration: 'inherit'}} target="_blank" rel="noreferrer">
-                <div className="project-container">
-                  <img src={Ruche} className="projectImg" style={{maxHeight: "200px"}} alt="La-ruche-friperie"/>  
-                  <p>Site vitrine de la ruche Friperie (Bientôt en ligne)</p>
                 </div>
                 </a>
               </Col>
