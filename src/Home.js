@@ -39,7 +39,7 @@ function Home() {
     }, [isActive]);
 
     return(
-    <>
+    <div className="background-img">
       <section className="banner" id="sec">
         <header>
           <FontAwesomeIcon icon={faCode} size="3x" color="white" className="slow-spin"/>
@@ -70,7 +70,7 @@ function Home() {
           </div>
         </ul>
       </section>
-    </>  
+    </div>  
   )
 }
 

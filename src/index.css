@@ -16,6 +16,11 @@ code {
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
 }
+.background-img {
+    background-image: url(./images/bg.jpg);
+    background-size: cover;
+    z-index: 3
+}
 .link, ul {
     color: white;
 }
@@ -67,8 +72,6 @@ header #toggle:after {
     width: 100%;
     min-height: 100vh;
     padding: 100px;
-    background: url(./images/bg.jpg);
-    background-size: cover;
     display: flex;
     align-items: center;
     z-index: 2;
