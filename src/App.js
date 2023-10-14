@@ -5,6 +5,7 @@ import Portfolio from './Portfolio';
 import Contact from './Contact';
 import Accueil from './Accueil';
 import AboutMe from './AboutMe';
+import RenePrivacy from './RenePrivacy';
 import {
   BrowserRouter as Router,
   Route,
@@ -28,6 +29,7 @@ function App() {
         <Route path="/Contact" component={Contact}></Route>
         <Route path="/Accueil" component={Accueil}></Route>
         <Route path="/AboutMe" component={AboutMe}></Route>
+        <Route path="/RenePrivacy" component={RenePrivacy}></Route>
       </Switch>
     </Router>
     </div>
